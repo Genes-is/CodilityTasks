@@ -7,10 +7,11 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Respectable.LongestSubsequence();
-            int[] array = {2, 8, 5, 9, 12, 6 };
+            var t = new Respectable.GenomicRangeQuery();
 
-            int[] result = t.Solution2(array);
+            int[] result = t.solution("CAGCCTA",
+                new int[] { 2, 5, 0 },
+                new int[] { 4, 5, 6 });
             for (int i = 0; i < result.Length; i++)
                 Console.Write($"{result[i]}, ");
         }
