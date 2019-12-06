@@ -7,13 +7,12 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Respectable.GenomicRangeQuery();
-
-            int[] result = t.solution("CAGCCTA",
-                new int[] { 2, 5, 0 },
-                new int[] { 4, 5, 6 });
-            for (int i = 0; i < result.Length; i++)
-                Console.Write($"{result[i]}, ");
+            var t = new Painless.Brackets();
+            int[] array = { 3, 2, 6, -1, 4, 5, -1, 2 };
+            var result = t.solution("{[()()]}");
+            Console.WriteLine(result);
+            //for (int i = 0; i < result.Length; i++)
+            //    Console.Write($"{result[i]}, ");
         }
 
         static private void TestMario()
