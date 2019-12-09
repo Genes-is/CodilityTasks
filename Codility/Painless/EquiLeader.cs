@@ -4,15 +4,13 @@ using System.Text;
 
 namespace Codility.Painless
 {
-    class Dominator
+    class EquiLeader
     {
         public int solution(int[] A)
         {
             int n = A.Length;
             int candidate = 0;
             int count = 0;
-            if (n < 1)
-                return -1;
 
             for (int i = 0; i < n; i++)
             {
@@ -25,17 +23,22 @@ namespace Codility.Painless
             }
 
             int leader = A[candidate];
-            if (count == 0)
-                leader = -1;
 
             count = 0;
+            int[] counts = new int[n];
             for (int i = 0; i < n; i++)
+            {
                 if (A[i] == leader)
                     count++;
+                counts[i] = count;
+            }
 
-            if (count <= n / 2)
-                return -1;
-            return candidate;
+            int result = 0;
+            for (int i = 0; i < n; i++)
+                if (counts[i] > (i + 1) / 2 && (counts[n - 1] - counts[i]) > (n - i - 1) / 2)
+                    result++;
+
+            return result;
         }
     }
 }
