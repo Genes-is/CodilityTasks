@@ -7,12 +7,12 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Respectable.Peaks();
+            var t = new Respectable.CountSemiprimes();
             int[] array = { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 };
-            var result = t.solution(array);
-            Console.WriteLine(result);
-            //for (int i = 0; i < result.Length; i++)
-            //    Console.Write($"{result[i]}, ");
+            var result = t.solution(26, new int[] { 1}, new int[] { 26});
+            //Console.WriteLine(result);
+            for (int i = 0; i < result.Length; i++)
+                Console.Write($"{result[i]}, ");
         }
 
         static private void TestMario()
