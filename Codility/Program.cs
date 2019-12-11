@@ -7,8 +7,8 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Painless.MaxProfit();
-            int[] array = { 23171, 21011, 21123, 21366, 21013, 21367 };
+            var t = new Respectable.Peaks();
+            int[] array = { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 };
             var result = t.solution(array);
             Console.WriteLine(result);
             //for (int i = 0; i < result.Length; i++)

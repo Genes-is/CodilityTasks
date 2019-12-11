@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Codility
 {
     class TreeProduct
     {
+        //not solved yet
         public string solution(int[] A, int[] B)
         {
             int n = A.Length;
