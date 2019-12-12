@@ -7,9 +7,9 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Respectable.CountSemiprimes();
-            int[] array = { 1, 2, 3, 4, 3, 4, 1, 2, 3, 4, 6, 2 };
-            var result = t.solution(26, new int[] { 1}, new int[] { 26});
+            var t = new Respectable.CountNonDivisible();
+            int[] array = { 3, 1, 2, 3, 6 };
+            var result = t.SolutionWithDictionary(array);
             //Console.WriteLine(result);
             for (int i = 0; i < result.Length; i++)
                 Console.Write($"{result[i]}, ");
