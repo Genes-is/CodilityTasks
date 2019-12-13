@@ -7,9 +7,9 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Respectable.CountNonDivisible();
+            var t = new Respectable.Ladder();
             int[] array = { 3, 1, 2, 3, 6 };
-            var result = t.SolutionWithDictionary(array);
+            var result = t.solution(new int[] { 50000 },new int[] { 30});
             //Console.WriteLine(result);
             for (int i = 0; i < result.Length; i++)
                 Console.Write($"{result[i]}, ");
