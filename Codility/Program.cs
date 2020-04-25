@@ -7,12 +7,12 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            var t = new Respectable.Ladder();
-            int[] array = { 3, 1, 2, 3, 6 };
-            var result = t.solution(new int[] { 50000 },new int[] { 30});
-            //Console.WriteLine(result);
-            for (int i = 0; i < result.Length; i++)
-                Console.Write($"{result[i]}, ");
+            var t = new Ambitious.SlalomSkying();
+            int[] array = {15,13, 5, 7, 4,10,12,8,2,11,6,9,3 };
+            var result = t.solution(array);
+            Console.WriteLine(result);
+            //for (int i = 0; i < result.Length; i++)
+            //    Console.Write($"{result[i]}, ");
         }
 
         static private void TestMario()
